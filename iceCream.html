@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icecream</title>
+    <style>
+        * {
+            padding:5px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="section-1">
+            <div>
+                <label for="">Number of Scoops</label>
+                <input type="text" id="scoops"> <br>
+            </div>
+            <div>
+                <input type="radio" name="select" id="cone">Cone
+                <input type="radio" name="select" id="cup">Cup
+            </div>
+            
+        </section>
+        <section class="section-2">
+            <fieldset>
+                <legend>Toppings</legend>
+                <input type="checkbox" name="Sprinkles" id="sprinkles"> Sprinkles($.50)
+                <input type="checkbox" name="Whipped Cream" id="whippedCream"> Whipped Cream($.25)
+                <input type="checkbox" name="Hot Fudge" id="hotFudge"> Hot Fudge($.1.25)
+                <input type="checkbox" name="cherry" id="cherry"> cherry($.25)
+            </fieldset>
+        </section>
+        <section class="section-3">
+            <button type="" id="subOrder">Submit Order</button>
+            <div>
+                <p>Base price : <output id="basePrice">$xx.xx</output></p>
+                <p>Tax : <output id="tax">$xx.xx</output></p>
+                <p>Total Due : <output id="totalDue">$xx.xx</output></p>
+            </div>
+        </section>
+    </main>
+    <script src="./icecream.js"></script>
+</body>
+</html>
